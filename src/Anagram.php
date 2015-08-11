@@ -3,9 +3,13 @@
     class Anagram
     {
 
-        function makeAnagram($user_input)
+        function makeAnagram($main_word, $check_words)
         {
-            return $user_input;
+            $output = '';
+            if ($main_word === $check_words) {
+                $output = $check_words;
+            }
+            return $output;
         }
     }
 

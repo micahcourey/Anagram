@@ -1,1 +1,13 @@
-1.
+
+
+1. For the inputs 'a' and 'a' we return "a"
+Input: "A", "A"
+Output: "A"
+
+2. for complete words we return anagram matches
+Input: "on", "no"
+Output: "no"
+
+3. For non-mathces we get nothing back
+Input: "Fox", "Dog"
+Output: ""
