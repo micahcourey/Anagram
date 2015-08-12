@@ -40,11 +40,11 @@
             //Arrange
             $test_Anagram = new Anagram;
             $input1 = "doom";
-            $input2 = array("cat", "mood", "odom", "dog");
+            $input2 = array("cat", "mood", "odom", "dog", "omod");
             //Act
             $result = $test_Anagram->makeAnagram($input1, $input2);
             //Assert
-            $this->assertEquals(array("mood", "odom"), $result);
+            $this->assertEquals(array("mood", "odom", "omod"), $result);
         }
     }
 ?>

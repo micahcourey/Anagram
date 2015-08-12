@@ -14,8 +14,8 @@
 
     $app->get("/view_anagrams", function() use ($app) {
         $my_Anagram = new Anagram;
-        $input_word = $my_Anagram->makeAnagram($_GET['word'], $_GET['list']);
-        return $app['twig']->render('anagram.html.twig', array('result' => $input_word));
+        $input_words = $my_Anagram->makeAnagram($_GET['word'], $_GET['list']);
+        return $app['twig']->render('anagram.html.twig', array('result' => $input_words,));
     });
 
     return $app;
